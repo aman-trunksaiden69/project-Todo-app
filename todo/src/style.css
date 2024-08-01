@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+::selection{
+    background-color: white;
+    color: #27032D;
+}
+
+.main{
+   background: linear-gradient(to right top, #040529, #27032D, #040529);
+}
+
+.form{
+    background-color: #00000057;
+    filter: drop-shadow(5px 5px 2px #000);
+}
+.box{
+    filter: drop-shadow(3px 5px 5px purple);
+}
+.tod{
+    filter: drop-shadow(2px 2px 2px purple);
+}
+.circle{
+    filter: drop-shadow(2px 3px 5px purple);
+    border: 3px solid purple;
+}
+
+.tog{
+    cursor: pointer;
+}
+.delete{
+    transition: all ease 0.2s;
+}
+.delete:hover{
+  scale: 1.1;
+  color: purple;
+  cursor: pointer;
+} 
+
+.btn{
+    transition: all ease 0.3s;
+}
+.btn:hover{
+  scale: 1.1;
+  transform: translateY(-3px);
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 4px white);
+}
+.btn:hover .il{
+    color: white;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+  
+  .tog {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  .tog.leave {
+    animation: fadeOut 0.5s ease forwards;
+  }
+  
